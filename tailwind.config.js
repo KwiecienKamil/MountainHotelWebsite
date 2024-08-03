@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         navBackground: "url('/src/assets/navbarBackground.png')",
       },
+      colors: {
+        acc: "#333945",
+      },
     },
   },
   plugins: [],

@@ -3,7 +3,7 @@ import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-navBackground h-[80px] w-full bg-center flex items-center justify-between px-[4rem]">
+    <div className="bg-navBackground h-[80px] w-full bg-center flex items-center justify-between px-[4rem] fixed z-10">
       <div className="flex items-center gap-4">
         <a href="#" className="font-semibold z-10">
           Rooms
