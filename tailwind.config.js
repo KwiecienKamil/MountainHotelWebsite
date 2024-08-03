@@ -7,7 +7,11 @@ export default {
         navBackground: "url('/src/assets/navbarBackground.png')",
       },
       colors: {
-        acc: "#333945",
+        accDark: "#333945",
+        accLight: "#B1D4FA",
+      },
+      fontFamily: {
+        mont: "Montserrat",
       },
     },
   },
