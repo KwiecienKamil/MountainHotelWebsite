@@ -8,7 +8,7 @@ export default {
       },
       colors: {
         accDark: "#333945",
-        accLight: "#B1D4FA",
+        accLight: "#B9DAFD",
       },
       fontFamily: {
         mont: "Montserrat",
