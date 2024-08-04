@@ -22,12 +22,19 @@ const Hero = () => {
             cuisine, perfect for savoring after a day of exploration.
           </p>
         </div>
-        <div className="absolute w-full h-[100px] bottom-8 left-0 bg-accDark flex items-center justify-center gap-4 shadow-md">
-          <h2 className="text-white font-semibold">
-            Book Now<br></br>
-            Your Ideal<br></br>
-            <span className="underline">stay</span>
-          </h2>
+        <div className="absolute w-full h-[100px] bottom-40 left-0 flex items-center justify-center gap-4 z-10">
+          <div className="flex items-center justify-center gap-12 bg-white rounded-xl px-8 py-4">
+            <div className="flex items-center gap-8">
+              <h2 className="text-black font-semibold">
+                Book Now<br></br>
+                Your Ideal<br></br>
+                <span className="underline">stay</span>
+              </h2>
+              <button className="">Check-In Date</button>
+              <button>Check-Out Date</button>
+            </div>
+          </div>
+          <button>Check Availability</button>
         </div>
       </div>
     </>
