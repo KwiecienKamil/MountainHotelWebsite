@@ -22,7 +22,7 @@ const Booking = () => {
           </button>
         </div>
       </div>
-      <button className="p-10 bg-green-500 rounded-r-xl font-semibold hover:brightness-90 duration-300">
+      <button className="p-10 bg-accLight rounded-r-xl font-semibold hover:brightness-90 duration-300">
         Check Availability
       </button>
     </div>
