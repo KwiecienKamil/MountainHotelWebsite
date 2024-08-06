@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRegCalendarCheck } from "react-icons/fa6";
 import { FaRegCalendarXmark } from "react-icons/fa6";
+import { FaPersonCircleCheck } from "react-icons/fa6";
 
 const Booking = () => {
   return (
@@ -19,6 +20,9 @@ const Booking = () => {
           <button className="flex items-center gap-2">
             <FaRegCalendarXmark />
             Check-Out Date
+          </button>
+          <button className="flex items-center gap-2">
+            <FaPersonCircleCheck />1 Person
           </button>
         </div>
       </div>
