@@ -1,7 +1,7 @@
 import React from "react";
 import Booking from "./Booking";
-import HeroBackgroundVideo from "./ui/HeroBackgroundVideo";
-import HeroHeading from "./ui/HeroHeading";
+import HeroBackgroundVideo from "../components/ui/HeroBackgroundVideo";
+import HeroHeading from "../components/ui/HeroHeading";
 
 const Hero = () => {
   return (

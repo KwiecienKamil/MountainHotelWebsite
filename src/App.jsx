@@ -1,6 +1,7 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Rooms from "./components/Rooms";
+import Achievements from "./pages/Achievements";
+import Hero from "./pages/Hero";
+import Navbar from "./pages/Navbar";
+import Rooms from "./pages/Rooms";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Rooms />
+      <Achievements />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import roomsGallery from "../assets/roomsGallery.png";
 
 const Rooms = () => {
   return (
-    <div className="relative -top-24 w-full px-[9rem] bg-dark pt-24 flex flex-col items-center text-light pb-8">
+    <div className="relative -top-24 w-full px-[9rem] bg-dark py-24 flex flex-col items-center text-light">
       <div className="w-full flex items-center justify-between">
         <h2 className="py-16 font-bold text-4xl">
           Enjoy an unforgettable stay<br></br> with the best charm
