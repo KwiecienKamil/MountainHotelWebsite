@@ -4,7 +4,7 @@ import achievements from "../assets/achievements.png";
 
 const Achievements = () => {
   return (
-    <div className="bg-light pb-12 w-full px-[9rem] text-gray-500 flex items-center justify-between">
+    <div className="bg-light mb-20 w-full px-[9rem] text-gray-500 flex items-center justify-between">
       <div>
         <h3 className="text-3xl pb-6 border-b-[1px] border-gray-500">
           Elevating Luxury and Comfort Since 1995
@@ -31,7 +31,7 @@ const Achievements = () => {
           <span className="text-2xl">5.0</span>
         </div>
       </div>
-      <img src={achievements} alt="Achievements" className="w-[800px]" />
+      <img src={achievements} alt="Achievements" className="w-[500px]" />
     </div>
   );
 };
