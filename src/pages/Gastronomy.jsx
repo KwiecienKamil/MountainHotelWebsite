@@ -1,5 +1,8 @@
 import React from "react";
 import gastronomy1 from "../assets/food.png";
+import signatureDish1 from "../assets/signatureDish1.png";
+import signatureDish2 from "../assets/signatureDish2.png";
+import signatureDish3 from "../assets/signatureDish3.png";
 
 const Gastronomy = () => {
   return (
@@ -15,20 +18,17 @@ const Gastronomy = () => {
             prepared to perfection
           </p>
         </div>
-        <div className="mt-16">
+        <div className="mt-4">
           <h5 className="font-semibold text-center">Signature Dishes</h5>
-          <div className="flex items-center justify-between mt-8">
+          <div className="flex items-center justify-between mt-2">
             <div className="flex flex-col items-center gap-2">
-              <img src="" alt="" />
-              <p>XD</p>
+              <img src={signatureDish1} alt="Eggs on avocado" />
             </div>
             <div className="flex flex-col items-center gap-2">
-              <img src="" alt="" />
-              <p>XD</p>
+              <img src={signatureDish2} alt="Burger with fries" />
             </div>
             <div className="flex flex-col items-center gap-2">
-              <img src="" alt="" />
-              <p>XD</p>
+              <img src={signatureDish3} alt="Beef with rice" />
             </div>
           </div>
         </div>
