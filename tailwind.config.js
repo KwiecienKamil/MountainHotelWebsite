@@ -14,6 +14,22 @@ export default {
       fontFamily: {
         mont: "Montserrat",
       },
+      keyframes: {
+        carousel: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(-120px)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+      },
+      animation: {
+        carousel: "carousel 30s infinite",
+      },
     },
   },
   plugins: [],
