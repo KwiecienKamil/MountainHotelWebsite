@@ -26,9 +26,21 @@ export default {
             transform: "translateX(0)",
           },
         },
+        carouselBackwards: {
+          "0%": {
+            transform: "translateX(-160px)",
+          },
+          "50%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(-160px)",
+          },
+        },
       },
       animation: {
-        carousel: "carousel 30s infinite",
+        carousel: "carousel 10s infinite",
+        carouselBackwards: "carouselBackwards 10s infinite",
       },
     },
   },

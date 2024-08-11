@@ -3,7 +3,7 @@ import React from "react";
 const NavbarNavigationButtons = () => {
   return (
     <>
-      <div className="flex items-center gap-4 text-xl mt-1 text-light pr-8">
+      <div className="flex items-center gap-4 text-xl mt-1  pr-8">
         <a href="#" className="z-10 hover:brightness-75 duration-300">
           Rooms
         </a>

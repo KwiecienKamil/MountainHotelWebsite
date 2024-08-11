@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/Logo.png";
 import NavbarNavigationButtons from "../components/ui/NavbarNavigationButtons";
 
 const Navbar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+    if (position > 30) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="bg-transparent h-[80px] w-full bg-center flex items-center justify-between px-[9rem] fixed z-10">
+    <div
+      className={`z-20 h-[80px] w-full flex items-center justify-between px-[9rem] fixed transition-colors duration-300 ${
+        isScrolled
+          ? "bg-light text-dark"
+          : "bg-transparent text-light shadow-lg"
+      }`}
+    >
       <img src={Logo} alt="Hotel Logo" />
       <NavbarNavigationButtons />
     </div>
