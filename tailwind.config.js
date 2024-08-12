@@ -2,6 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      xs: "500px",
+      sm: "800px",
+      md: "1000px",
+      lg: "1200px",
+      xl: "1500px",
+      xxl: "1700px",
+    },
     extend: {
       backgroundImage: {
         navBackground: "url('/src/assets/navbarBackground.png')",

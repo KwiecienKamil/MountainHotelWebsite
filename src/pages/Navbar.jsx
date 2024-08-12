@@ -27,8 +27,8 @@ const Navbar = () => {
     <div
       className={`z-20 h-[80px] w-full flex items-center justify-between px-[9rem] fixed transition-colors duration-300 ${
         isScrolled
-          ? "bg-light text-dark"
-          : "bg-transparent text-light shadow-lg"
+          ? "bg-light text-dark shadow-lg"
+          : "bg-transparent text-light"
       }`}
     >
       <img src={Logo} alt="Hotel Logo" />

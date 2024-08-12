@@ -6,7 +6,7 @@ const Gallery = () => {
       <h6 className="text-center text-5xl font-bold text-light pb-12">
         Gallery
       </h6>
-      <div className="w-[2000px] flex animate-carousel">
+      <div className="flex animate-carousel">
         <div className="flex items-center gap-8 overflow-hidden">
           <div>
             <img
@@ -60,7 +60,7 @@ const Gallery = () => {
         </div>
       </div>
       {/* Same carousel backwards*/}
-      <div className="w-[2000px] flex mt-16 pb-8 animate-carouselBackwards -translate-x-[160px]">
+      <div className=" flex mt-16 pb-8 animate-carouselBackwards -translate-x-[160px]">
         <div className="flex items-center gap-8 overflow-hidden">
           <div>
             <img

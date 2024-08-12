@@ -6,10 +6,9 @@ import HeroHeading from "../components/ui/HeroHeading";
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center bg-dark">
         <HeroBackgroundVideo />
         <HeroHeading />
-        <Booking />
       </div>
     </>
   );
