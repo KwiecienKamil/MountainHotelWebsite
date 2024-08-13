@@ -5,7 +5,7 @@ import Booking from "../../pages/Booking";
 
 const HeroBackgroundVideo = () => {
   return (
-    <div className="relative overflow-hidden h-[800px]">
+    <div className="relative overflow-hidden">
       <video autoPlay loop muted className="brightness-50">
         <source src={hotelBackgroundVideo} type="video/mp4" />
       </video>

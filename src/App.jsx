@@ -12,14 +12,15 @@ function App() {
   return (
     <div className="font-mont">
       <Navbar />
-      <Hero />
-      <Rooms />
+      {/*<Hero />
+       <Rooms />
       <Achievements />
       <Gastronomy />
       <Wellness />
-      <Gallery />
+      {/* <Gallery /> 
       <Location />
-      <Footer />
+      <Footer /> 
+      */}
     </div>
   );
 }
