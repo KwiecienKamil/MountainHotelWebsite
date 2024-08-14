@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Achievements from "./pages/Achievements";
 import Footer from "./pages/Footer";
 import Gallery from "./pages/Gallery";
@@ -9,9 +10,17 @@ import Rooms from "./pages/Rooms";
 import Wellness from "./pages/Wellness";
 
 function App() {
+  const [openNavigation, setOpenNavigation] = useState(false);
+
+  const openResponsiveNav = () => {
+    setOpenNavigation(!openNavigation);
+  };
   return (
     <div className="font-mont">
-      <Navbar />
+      <Navbar
+        openNavigation={openNavigation}
+        openResponsiveNav={openResponsiveNav}
+      />
       {/*<Hero />
        <Rooms />
       <Achievements />
