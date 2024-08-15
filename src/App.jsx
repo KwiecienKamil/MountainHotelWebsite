@@ -21,9 +21,9 @@ function App() {
         openNavigation={openNavigation}
         openResponsiveNav={openResponsiveNav}
       />
-      {/*<Hero />
-       <Rooms />
-      <Achievements />
+      <Hero />
+      <Rooms />
+      {/*<Achievements />
       <Gastronomy />
       <Wellness />
       {/* <Gallery /> 
