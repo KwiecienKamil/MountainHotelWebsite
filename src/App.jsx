@@ -23,13 +23,12 @@ function App() {
       />
       <Hero />
       <Rooms />
-      {/*<Achievements />
+      <Achievements />
       <Gastronomy />
       <Wellness />
-      {/* <Gallery /> 
+      <Gallery />
       <Location />
-      <Footer /> 
-      */}
+      <Footer />
     </div>
   );
 }
