@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 
 import { FaCircleArrowUp } from "react-icons/fa6";
 
-const NavbarNavigationButtons = ({ openNavigation, openResponsiveNav }) => {
+const NavbarNavigationButtons = ({
+  openNavigation,
+  openResponsiveNav,
+  isScrolled,
+}) => {
   return (
     <>
       <div
@@ -14,17 +18,21 @@ const NavbarNavigationButtons = ({ openNavigation, openResponsiveNav }) => {
           gap-8 font-semibold text-md `}
       >
         <div className="flex items-center gap-8">
-          <div className="relative flex items-center gap-6 px-8 py-4 lg:p-0 rounded-full lg:bg-transparent text-dark bg-light shadow-lg lg:shadow-none">
-            <a href="#" className="z-10 hover:brightness-75 duration-300 ">
+          <div
+            className={`relative flex items-center gap-6 px-8 py-4 lg:p-0 rounded-full lg:bg-transparent  bg-light shadow-lg lg:shadow-none ${
+              isScrolled ? `text-dark` : `text-dark lg:text-light `
+            }`}
+          >
+            <a href="#" className="hover:brightness-75 duration-300">
               Rooms
             </a>
-            <a href="#" className="z-10 hover:brightness-75 duration-300">
+            <a href="#" className="hover:brightness-75 duration-300">
               Gastronomy
             </a>
-            <a href="#" className="z-10 hover:brightness-75 duration-300">
+            <a href="#" className="hover:brightness-75 duration-300">
               Wellness
             </a>
-            <a href="#" className="z-10 hover:brightness-75 duration-300">
+            <a href="#" className="hover:brightness-75 duration-300">
               Gallery
             </a>
             <button
@@ -40,7 +48,7 @@ const NavbarNavigationButtons = ({ openNavigation, openResponsiveNav }) => {
         </div>
       </div>
       <button
-        className="text-dark md:text-2xl block lg:hidden"
+        className="text-light md:text-2xl block lg:hidden"
         onClick={openResponsiveNav}
       >
         <FaBars />
