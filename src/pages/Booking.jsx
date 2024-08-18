@@ -5,8 +5,8 @@ import { FaPersonCircleCheck } from "react-icons/fa6";
 
 const Booking = () => {
   return (
-    <div className="absolute w-full bottom-10 left-0 flex items-center justify-center z-10 ">
-      <div className="flex items-center justify-center gap-12 bg-white rounded-l-xl px-8 py-4">
+    <div className="absolute w-full bottom-10 left-0 flex items-center justify-center z-10 text-sm md:text-md">
+      <div className="flex items-center justify-center gap-12 bg-white rounded-l-xl px-8 py-2">
         <div className="flex items-center gap-12">
           <h2 className="text-black font-semibold">
             Book Now<br></br>
@@ -26,7 +26,7 @@ const Booking = () => {
           </button>
         </div>
       </div>
-      <button className="p-10 bg-accLight rounded-r-xl font-semibold hover:brightness-90 duration-300">
+      <button className="p-7 bg-accLight rounded-r-xl font-semibold hover:brightness-90 duration-300 text-sm md:text-md">
         Check Availability
       </button>
     </div>
