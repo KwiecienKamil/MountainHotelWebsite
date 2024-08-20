@@ -23,7 +23,6 @@ function App() {
         openResponsiveNav={openResponsiveNav}
       />
       <Hero />
-      <Booking />
       <Rooms />
       {/*<Achievements />
       <Gastronomy />

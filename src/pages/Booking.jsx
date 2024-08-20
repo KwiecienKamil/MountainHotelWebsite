@@ -5,7 +5,7 @@ import { FaPersonCircleCheck } from "react-icons/fa6";
 
 const Booking = () => {
   return (
-    <div className="absolute w-full bottom-48 left-0 flex items-center justify-center z-10 text-sm md:text-md">
+    <div className="flex items-center justify-center z-20 text-sm md:text-md bg-white">
       <div className="flex items-center justify-center gap-12 bg-white rounded-l-xl px-8 py-2">
         <div className="flex items-center gap-12">
           <h2 className="text-black font-semibold">

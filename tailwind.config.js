@@ -3,12 +3,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      xs: "500px",
-      sm: "800px",
-      md: "1000px",
-      lg: "1200px",
-      xl: "1500px",
-      xxl: "1700px",
+      screen0: "400px",
+      screen1: "500px",
+      screen2: "600px",
+      screen3: "800px",
+      screen4: "900px",
+      screen5: "1000px",
+      screen6: "1200px",
+      screen7: "1350px",
+      screen8: "1500px",
+      screen9: "1550px",
     },
     extend: {
       backgroundImage: {
