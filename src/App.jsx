@@ -24,9 +24,9 @@ function App() {
       />
       <Hero />
       <Rooms />
-      {/*<Achievements />
+      <Achievements />
       <Gastronomy />
-      <Wellness />
+      {/* <Wellness />
       <Gallery />
       <Location />
       <Footer /> */}
