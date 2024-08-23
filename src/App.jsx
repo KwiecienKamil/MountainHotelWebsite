@@ -27,8 +27,8 @@ function App() {
       <Achievements />
       <Gastronomy />
       <Wellness />
-      {/*<Gallery />
-      <Location />
+      <Gallery />
+      {/*<Location />
       <Footer /> */}
     </div>
   );

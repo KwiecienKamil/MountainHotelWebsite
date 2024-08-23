@@ -32,7 +32,7 @@ export default {
             transform: "translateX(0)",
           },
           "50%": {
-            transform: "translateX(-120px)",
+            transform: "translateX(-280px)",
           },
           "100%": {
             transform: "translateX(0)",
@@ -40,19 +40,43 @@ export default {
         },
         carouselBackwards: {
           "0%": {
-            transform: "translateX(-160px)",
+            transform: "translateX(-250px)",
           },
           "50%": {
             transform: "translateX(0)",
           },
           "100%": {
-            transform: "translateX(-160px)",
+            transform: "translateX(-250px)",
+          },
+        },
+        carouselMobile: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(-800px)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        carouselBackwardsMobile: {
+          "0%": {
+            transform: "translateX(-800px)",
+          },
+          "50%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(-800px)",
           },
         },
       },
       animation: {
         carousel: "carousel 10s infinite",
         carouselBackwards: "carouselBackwards 10s infinite",
+        carouselMobile: "carouselMobile 15s infinite",
+        carouselBackwardsMobile: "carouselBackwardsMobile 15s infinite",
       },
     },
   },
