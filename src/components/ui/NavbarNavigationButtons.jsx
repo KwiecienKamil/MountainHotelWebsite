@@ -48,7 +48,9 @@ const NavbarNavigationButtons = ({
         </div>
       </div>
       <button
-        className=" md:text-3xl block screen6:hidden text-dark screen6:text-light"
+        className={`md:text-3xl block screen6:hidden  ${
+          isScrolled ? `text-accLight` : `text-light`
+        }`}
         onClick={openResponsiveNav}
       >
         <FaBars />
