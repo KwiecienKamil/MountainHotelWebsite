@@ -28,8 +28,8 @@ function App() {
       <Gastronomy />
       <Wellness />
       <Gallery />
-      {/*<Location />
-      <Footer /> */}
+      <Location />
+      <Footer />
     </div>
   );
 }
