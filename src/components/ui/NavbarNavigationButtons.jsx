@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 
 import { FaCircleArrowUp } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 const NavbarNavigationButtons = ({
   openNavigation,
@@ -23,18 +24,61 @@ const NavbarNavigationButtons = ({
               isScrolled ? `text-dark` : `text-dark screen5:text-light `
             }`}
           >
-            <a href="#" className="hover:brightness-75 duration-300 ">
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={800}
+              className="hover:brightness-75 duration-300 cursor-pointer"
+            >
+              Home
+            </Link>
+            <Link
+              activeClass="active"
+              to="rooms"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={800}
+              className="hover:brightness-75 duration-300 cursor-pointer"
+            >
               Rooms
-            </a>
-            <a href="#" className="hover:brightness-75 duration-300">
+            </Link>
+            <Link
+              activeClass="active"
+              to="gastronomy"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={800}
+              className="hover:brightness-75 duration-300 cursor-pointer"
+            >
               Gastronomy
-            </a>
-            <a href="#" className="hover:brightness-75 duration-300">
-              Wellness
-            </a>
-            <a href="#" className="hover:brightness-75 duration-300">
+            </Link>
+            <Link
+              activeClass="active"
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={800}
+              className="hover:brightness-75 duration-300 cursor-pointer"
+            >
               Gallery
-            </a>
+            </Link>
+            <Link
+              activeClass="active"
+              to="location"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={800}
+              className="hover:brightness-75 duration-300 cursor-pointer"
+            >
+              Location
+            </Link>
             <button
               className="absolute -bottom-3 left-[200px] screen5:hidden text-dark text-2xl rounded-full"
               onClick={openResponsiveNav}

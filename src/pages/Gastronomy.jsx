@@ -6,7 +6,10 @@ import signatureDish3 from "../assets/signatureDish3.png";
 
 const Gastronomy = () => {
   return (
-    <div className="screen7:flex-row flex-col flex items-center gap-8 screen5:gap-16 bg-dark px-[2rem] screen3:px-[5rem] screen6:px-[9rem] text-light text-xl relative">
+    <div
+      className="screen7:flex-row flex-col flex items-center gap-8 screen5:gap-16 bg-dark px-[2rem] screen3:px-[5rem] screen6:px-[9rem] text-light text-xl relative"
+      id="gastronomy"
+    >
       <img
         src={gastronomy1}
         alt="People in our restaurant"

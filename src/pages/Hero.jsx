@@ -6,7 +6,7 @@ import HeroHeading from "../components/ui/HeroHeading";
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-center bg-dark">
+      <div className="flex justify-center bg-dark" id="home">
         <HeroBackgroundVideo />
         <HeroHeading />
       </div>

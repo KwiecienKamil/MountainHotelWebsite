@@ -36,7 +36,7 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className="bg-dark py-12">
+    <div className="bg-dark py-12" id="gallery">
       <h6 className="text-center text-3xl screen5:text-5xl font-bold text-light pb-12">
         Gallery
       </h6>
