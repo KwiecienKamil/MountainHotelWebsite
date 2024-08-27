@@ -2,7 +2,10 @@ import React from "react";
 
 const Location = () => {
   return (
-    <div className="flex items-center justify-center flex-col screen7:flex-row gap-8 screen7:gap-16 py-8">
+    <div
+      className="flex items-center justify-center flex-col screen7:flex-row gap-8 screen7:gap-16 py-8"
+      id="location"
+    >
       <div>
         <h6 className="text-lg screen4:text-2xl screen6:text-5xl text-accLight font-bold">
           Where To Find Us?

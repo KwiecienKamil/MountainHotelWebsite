@@ -32,7 +32,7 @@ export default {
             transform: "translateX(0)",
           },
           "50%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-60%)",
           },
           "100%": {
             transform: "translateX(0)",
@@ -40,19 +40,19 @@ export default {
         },
         carouselBackwards: {
           "0%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-60%)",
           },
           "50%": {
             transform: "translateX(0)",
           },
           "100%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-60%)",
           },
         },
       },
       animation: {
-        carousel: "carousel 25s infinite",
-        carouselBackwards: "carousel 25s infinite",
+        carousel: "carousel 40s infinite",
+        carouselBackwards: "carouselBackwards 40s infinite",
       },
     },
   },
