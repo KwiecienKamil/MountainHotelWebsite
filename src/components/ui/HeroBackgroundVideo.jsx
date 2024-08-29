@@ -1,7 +1,6 @@
 import React from "react";
 
 import hotelBackgroundVideo from "../../assets/hero_video.mp4";
-import Booking from "../../pages/Booking";
 
 const HeroBackgroundVideo = () => {
   return (
