@@ -4,7 +4,7 @@ import roomsGallery from "../assets/roomsGallery.png";
 const Rooms = () => {
   return (
     <div
-      className="relative -top-16 screen7:-top-24 w-full px-[2rem] screen1:px-[5rem] screen7:px-[9rem] bg-dark flex flex-col items-center text-light"
+      className="relative -top-28 screen4:-top-52 screen7:-top-64 w-full px-[2rem] screen1:px-[5rem] screen7:px-[9rem] bg-dark flex flex-col items-center text-light"
       id="rooms"
     >
       <div className="w-full flex items-center justify-between flex-col screen6:flex-row">
