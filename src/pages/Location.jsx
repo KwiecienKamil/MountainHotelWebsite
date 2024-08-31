@@ -13,7 +13,7 @@ const Location = () => {
         <p className="font-semibold text-gray-400 pt-2 text-xs screen4:text-sm screen6:text-md">
           Ciągłówka 7b/7c, 34-500 Zakopane
         </p>
-        <p className="font-semibold text-gray-500 pt-2 text-xs screen4:text-sm screen6:text-md">
+        <p className="font-semibold text-gray-500 pt-2 text-xs screen4:text-sm screen6:text-md screen4:text-start">
           +48 744 321 987
         </p>
       </div>
