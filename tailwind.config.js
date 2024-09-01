@@ -16,7 +16,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        navBackground: "url('/src/assets/navbarBackground.png')",
+        bookingBackground: "url('/src/assets/bookingBackground.png')",
       },
       colors: {
         accLight: "#FE7C12",

@@ -2,33 +2,17 @@ import React from "react";
 import { FaRegCalendarCheck } from "react-icons/fa6";
 import { FaRegCalendarXmark } from "react-icons/fa6";
 import { FaPersonCircleCheck } from "react-icons/fa6";
+import Logo from "../assets/Logo.png";
 
 const Booking = () => {
   return (
-    <div className="flex items-center justify-center z-20 text-sm md:text-md bg-white">
-      <div className="flex items-center justify-center gap-12 bg-white rounded-l-xl px-8 py-2">
-        <div className="flex items-center gap-12">
-          <h2 className="text-black font-semibold">
-            Book Now<br></br>
-            Your Ideal<br></br>
-            <span className="underline">stay</span>
-          </h2>
-          <button className="flex items-center gap-2">
-            <FaRegCalendarCheck />
-            Check-In Date
-          </button>
-          <button className="flex items-center gap-2">
-            <FaRegCalendarXmark />
-            Check-Out Date
-          </button>
-          <button className="flex items-center gap-2">
-            <FaPersonCircleCheck />1 Person
-          </button>
+    <div className="h-screen w-full bg-no-repeat bg-bookingBackground bg-cover brightness-[60%] grid place-items-center">
+      <div className="bg-light">
+        <div className="flex items-center justify-between px-[.3rem]">
+          <img src={Logo} alt="Mountain Hideaway" className="w-[12rem]" />
+          <span>Reserve Your stay</span>
         </div>
       </div>
-      <button className="p-7 bg-accLight rounded-r-xl font-semibold hover:brightness-90 duration-300 text-sm md:text-md">
-        Check Availability
-      </button>
     </div>
   );
 };
