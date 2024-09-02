@@ -86,9 +86,12 @@ const NavbarNavigationButtons = ({
               <FaCircleArrowUp />
             </button>
           </div>
-          <button className="font-semibold px-4 py-2 bg-accLight text-black  rounded-xl hover:brightness-90 duration-300 hidden screen6:block">
+          <a
+            href="/booking"
+            className="font-semibold px-4 py-2 bg-accLight text-black  rounded-xl hover:brightness-90 duration-300 hidden screen6:block"
+          >
             Book Now
-          </button>
+          </a>
         </div>
       </div>
       <button
