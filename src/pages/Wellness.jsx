@@ -9,10 +9,10 @@ import { PiPersonSimpleHikeFill } from "react-icons/pi";
 const Wellness = () => {
   return (
     <div
-      className="flex justify-between flex-col screen5:flex-row px-[2rem] screen3:px-[5rem] screen6:px-[9rem] text-dark mt-8"
+      className="flex justify-between flex-col screen5:flex-row px-[2rem] screen3:px-[5rem] screen6:px-[9rem] text-dark"
       id="wellness"
     >
-      <div className="flex flex-col items-center screen5:items-start justify-center px-8 mt-4">
+      <div className="flex flex-col items-center screen5:items-start justify-center px-8 mt-6">
         <h5 className="screen5:text-start text-center text-lg screen2:text-2xl screen4:text-5xl font-bold">
           Find your perfect balance
         </h5>
