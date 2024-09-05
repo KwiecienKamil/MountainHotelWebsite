@@ -88,7 +88,7 @@ const NavbarNavigationButtons = ({
           </div>
           <a
             href="/booking"
-            className="font-semibold px-4 py-2 bg-accLight text-black  rounded-xl hover:brightness-90 duration-300 hidden screen6:block"
+            className="font-semibold px-4 py-2 bg-accLight text-black  rounded-xl hover:opacity-[70%] duration-300 hidden screen6:block"
           >
             Book Now
           </a>
