@@ -32,9 +32,15 @@ function App() {
       <Reveal>
         <Gastronomy />
       </Reveal>
-      <Wellness />
-      <Gallery />
-      <Location />
+      <Reveal>
+        <Wellness />
+      </Reveal>
+      <Reveal>
+        <Gallery />
+      </Reveal>
+      <Reveal>
+        <Location />
+      </Reveal>
       <Footer />
     </div>
   );
