@@ -1,3 +1,8 @@
+import dayjs from "dayjs";
+
+export const formattedTodaysDate = dayjs().format("DD/MM/YYYY");
+export const todaysDate = dayjs().format("YYYY-MM-DD");
+
 export const imagesArray = [
   {
     altText: "Mountain Hideaway",

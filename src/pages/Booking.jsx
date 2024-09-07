@@ -3,17 +3,28 @@ import Logo from "../assets/Logo.png";
 import Reveal from "../components/ui/Reveal";
 import { AiOutlineLoading } from "react-icons/ai";
 import { toast } from "react-toastify";
+import { formattedTodaysDate, todaysDate } from "../utils/Helpers";
+import dayjs from "dayjs";
 
 const Booking = () => {
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Checking if user saved date in future
+  const isNextDateAfterTodaysDate = (todaysDate, checkInDate) => {
+    const today = dayjs();
+    const nextDate = dayjs(checkInDate);
+    const comparisonDate = dayjs(todaysDate);
+    return nextDate.isAfter(comparisonDate);
+  };
+
   const CheckRoomsAvailability = () => {
     if (checkInDate.length === 0 || checkOutDate.length === 0) {
       toast.error("Add check-in/out dates");
     } else {
       setLoading(true);
+      isNextDateAfterTodaysDate(todaysDate, checkInDate);
     }
   };
 
@@ -24,6 +35,9 @@ const Booking = () => {
           <div className="flex items-center justify-center px-[.3rem]">
             <img src={Logo} alt="Mountain Hideaway" className="w-[14rem]" />
           </div>
+          <h1 className="text-center font-semibold pr-2">
+            {formattedTodaysDate}
+          </h1>
           <div className="flex items-center justify-between gap-12 mt-4 ">
             <div>
               <p>Check-In</p>
