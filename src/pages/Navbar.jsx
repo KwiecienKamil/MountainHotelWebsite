@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/Logo.png";
 import NavbarNavigationButtons from "../components/ui/NavbarNavigationButtons";
-import Reveal from "../components/ui/Reveal";
 
 const Navbar = ({ openNavigation, openResponsiveNav }) => {
   const [scrollPosition, setScrollPosition] = useState(0);

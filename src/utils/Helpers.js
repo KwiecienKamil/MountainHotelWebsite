@@ -3,6 +3,24 @@ import dayjs from "dayjs";
 export const formattedTodaysDate = dayjs().format("DD/MM/YYYY");
 export const todaysDate = dayjs().format("YYYY-MM-DD");
 
+const availableRooms = [
+  {
+    title: "Deluxe Room",
+    image: "",
+    price: 50,
+  },
+  {
+    title: "Executive Suite",
+    image: "",
+    price: 75,
+  },
+  {
+    title: "Presidential Suite",
+    image: "",
+    price: 90,
+  },
+];
+
 export const imagesArray = [
   {
     altText: "Mountain Hideaway",

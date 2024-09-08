@@ -1,4 +1,3 @@
-import React from "react";
 import HeroBackgroundVideo from "../components/ui/HeroBackgroundVideo";
 import HeroHeading from "../components/ui/HeroHeading";
 
