@@ -3,13 +3,18 @@ import Logo from "../assets/Logo.png";
 import Reveal from "../components/ui/Reveal";
 import { AiOutlineLoading } from "react-icons/ai";
 import { toast } from "react-toastify";
-import { formattedTodaysDate, todaysDate } from "../utils/Helpers";
+import {
+  availableRooms,
+  formattedTodaysDate,
+  todaysDate,
+} from "../utils/Helpers";
 import dayjs from "dayjs";
 
 const Booking = () => {
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showRooms, setShowRooms] = useState(false);
 
   // Checking if user saved date in future
   const isNextDateAfterTodaysDate = (todaysDate, checkInDate) => {
@@ -24,12 +29,16 @@ const Booking = () => {
       toast.error("Add check-in/out dates");
     } else {
       setLoading(true);
-      isNextDateAfterTodaysDate(todaysDate, checkInDate);
+      setTimeout(() => {
+        isNextDateAfterTodaysDate(todaysDate, checkInDate);
+        setShowRooms(true);
+        setLoading(false);
+      }, "2000");
     }
   };
 
   return (
-    <div className="h-screen w-full bg-no-repeat bg-bookingBackground bg-cover grid place-items-center bg-brightness-[60%] text-light">
+    <div className="h-screen w-full bg-no-repeat bg-bookingBackground bg-cover flex items-center justify-center flex-col gap-4 bg-brightness-[60%] text-light">
       <Reveal>
         <div className="bg-dark p-4 screen3:p-6 rounded-lg">
           <div className="flex items-center justify-center px-[.3rem]">
@@ -77,6 +86,13 @@ const Booking = () => {
           </div>
         </div>
       </Reveal>
+      <div className="flex items-center gap-8">
+        {availableRooms.map((room) => (
+          <div>
+            <img className="w-28" src={room.image} alt="w/e" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

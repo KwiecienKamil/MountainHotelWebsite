@@ -3,20 +3,23 @@ import dayjs from "dayjs";
 export const formattedTodaysDate = dayjs().format("DD/MM/YYYY");
 export const todaysDate = dayjs().format("YYYY-MM-DD");
 
-const availableRooms = [
+export const availableRooms = [
   {
     title: "Deluxe Room",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 50,
   },
   {
     title: "Executive Suite",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 75,
   },
   {
     title: "Presidential Suite",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 90,
   },
 ];
