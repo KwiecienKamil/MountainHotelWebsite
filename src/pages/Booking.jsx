@@ -9,6 +9,7 @@ import {
   todaysDate,
 } from "../utils/Helpers";
 import dayjs from "dayjs";
+import RoomCard from "../components/ui/RoomCard";
 
 const Booking = () => {
   const [checkInDate, setCheckInDate] = useState("");
@@ -86,11 +87,14 @@ const Booking = () => {
           </div>
         </div>
       </Reveal>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center justify-center gap-8">
         {availableRooms.map((room) => (
-          <div>
-            <img className="w-28" src={room.image} alt="w/e" />
-          </div>
+          <RoomCard
+            src={room.image}
+            price={room.price}
+            title={room.title}
+            alt={room.alt}
+          />
         ))}
       </div>
     </div>

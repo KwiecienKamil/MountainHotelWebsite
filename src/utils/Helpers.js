@@ -9,18 +9,21 @@ export const availableRooms = [
     image:
       "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 50,
+    alt: "Deluxe room showcase",
   },
   {
     title: "Executive Suite",
     image:
       "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 75,
+    alt: "Executive Suite showcase",
   },
   {
     title: "Presidential Suite",
     image:
       "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 90,
+    alt: "Presidential Suite showcase",
   },
 ];
 
