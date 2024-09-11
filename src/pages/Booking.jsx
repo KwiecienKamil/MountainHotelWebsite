@@ -87,16 +87,18 @@ const Booking = () => {
           </div>
         </div>
       </Reveal>
-      <div className="flex items-center justify-center gap-8">
-        {availableRooms.map((room) => (
-          <RoomCard
-            src={room.image}
-            price={room.price}
-            title={room.title}
-            alt={room.alt}
-          />
-        ))}
-      </div>
+      {showRooms ? (
+        <div className="flex items-center justify-center gap-8">
+          {availableRooms.map((room) => (
+            <RoomCard
+              src={room.image}
+              price={room.price}
+              title={room.title}
+              alt={room.alt}
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };
