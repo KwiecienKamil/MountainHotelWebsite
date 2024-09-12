@@ -48,7 +48,7 @@ const Booking = () => {
           <h1 className="text-center font-semibold pr-2">
             {formattedTodaysDate}
           </h1>
-          <div className="flex items-center justify-between gap-12 mt-4 ">
+          <div className="flex items-center justify-between gap-[6rem] mt-4 ">
             <div>
               <p>Check-In</p>
               <input
@@ -66,7 +66,26 @@ const Booking = () => {
               />
             </div>
           </div>
-
+          {showRooms ? (
+            <div className="pt-4">
+              {availableRooms.map((room) => (
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4 text-xl">
+                    <span>{`${room.price}$`}</span>
+                    <h2>{room.title}</h2>
+                  </div>
+                  <div className="flex items-center gap-4 my-2 text-sm">
+                    <button className="px-2 py-1 bg-white text-dark">
+                      Preview
+                    </button>
+                    <button className="px-2 py-1 bg-white text-dark">
+                      Select
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
           <div className="flex items-center justify-between mt-8">
             <a
               href="/"
@@ -87,18 +106,6 @@ const Booking = () => {
           </div>
         </div>
       </Reveal>
-      {showRooms ? (
-        <div className="flex items-center justify-center gap-8">
-          {availableRooms.map((room) => (
-            <RoomCard
-              src={room.image}
-              price={room.price}
-              title={room.title}
-              alt={room.alt}
-            />
-          ))}
-        </div>
-      ) : null}
     </div>
   );
 };
