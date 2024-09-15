@@ -39,14 +39,15 @@ const Booking = () => {
 
   return (
     <div className="min-h-screen flex items-center flex-col gap-4 text-light bg-no-repeat bg-bookingBackground bg-cover bg-brightness-[60%] font-mont">
-      <div className="fixed w-[60%] h-screen bg-white z-0 flex items-center justify-center">
+      <div className="fixed w-[50%] h-screen bg-white z-0 flex items-center pt-[5rem]">
         {showRooms ? (
-          <div className="">
+          <div className="w-full relative flex flex-col gap-6">
             {availableRooms.map((room) => (
               <RoomCard
                 src={room.image}
                 title={room.title}
                 price={room.price}
+                rating={room.rating}
               />
             ))}
           </div>
