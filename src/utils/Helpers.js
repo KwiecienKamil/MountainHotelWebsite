@@ -10,8 +10,7 @@ export const availableRooms = [
       "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 90,
     rating: 5,
-    description:
-      "Designed for distinguished guests seeking an unparalleled experience of comfort and elegance.",
+    description: "Designed for guests seeking comfort and elegance.",
     alt: "Presidential Suite showcase",
   },
   {
@@ -20,8 +19,7 @@ export const availableRooms = [
       "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 85,
     rating: 4,
-    description:
-      "Designed for distinguished guests seeking an unparalleled experience of comfort and elegance.",
+    description: "Beautifull suite with a private balcony",
     alt: "Presidential Suite showcase",
   },
   {
@@ -30,8 +28,7 @@ export const availableRooms = [
       "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 75,
     rating: 4,
-    description:
-      "Designed for distinguished guests seeking an unparalleled experience of comfort and elegance.",
+    description: "Perfect for business travelers",
     alt: "Executive Suite showcase",
   },
   {
@@ -40,8 +37,7 @@ export const availableRooms = [
       "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 50,
     rating: 3,
-    description:
-      "Designed for distinguished guests seeking an unparalleled experience of comfort and elegance.",
+    description: "Comfortable and stylish room",
     alt: "Deluxe room showcase",
   },
 ];
