@@ -39,7 +39,7 @@ const Booking = () => {
 
   return (
     <div className="min-h-screen flex items-center flex-col gap-4 text-light bg-no-repeat bg-bookingBackground bg-cover bg-brightness-[60%] font-mont">
-      <div className="fixed w-[50%] h-screen bg-white z-0 flex items-center justify-center pt-[5rem]">
+      <div className="fixed w-[80%] screen6:w-[60%] h-screen bg-white z-0 flex items-center justify-center pt-[11rem] screen3:pt-[5rem]">
         {showRooms ? (
           <div className="w-full relative flex flex-col gap-2">
             {availableRooms.map((room) => (
@@ -58,21 +58,21 @@ const Booking = () => {
           </h2>
         )}
       </div>
-      <div className="flex items-center justify-center gap-8 w-full bg-dark px-[4rem] z-10">
-        <div className="flex items-center gap-8 py-8">
-          <div className="flex items-center gap-4">
+      <div className="flex flex-col screen3:flex-row items-center screen3:justify-center screen3:gap-8 w-full bg-dark px-[4rem] z-10 pb-4 screen3:pb-0">
+        <div className="flex flex-col screen3:flex-row screen3:items-center gap-8 py-4 screen3:py-8">
+          <div className="relative w-[300px] flex items-center  gap-4 text-sm screen5:text-md">
             <p>Check-In</p>
             <input
               type="date"
-              className="p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
+              className="w-[50%] p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
               onChange={(event) => setCheckInDate(event.target.value)}
             />
           </div>
-          <div className="flex items-center gap-4">
+          <div className="w-[300px] flex items-center gap-4 text-sm screen5:text-md">
             <p>Check-Out</p>
             <input
               type="date"
-              className="p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
+              className="w-[50%] p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
               onChange={(event) => setCheckOutDate(event.target.value)}
             />
           </div>
@@ -82,9 +82,9 @@ const Booking = () => {
           onClick={CheckRoomsAvailability}
         >
           {loading ? (
-            <AiOutlineLoading className="animate-spin text-xl" />
+            <AiOutlineLoading className="animate-spin text-lg screen5:text-xl" />
           ) : (
-            <p>Search Rooms</p>
+            <p className="text-sm screen5:text-md">Search Rooms</p>
           )}
         </button>
       </div>
