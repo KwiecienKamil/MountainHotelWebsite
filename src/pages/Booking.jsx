@@ -40,26 +40,26 @@ const Booking = () => {
   return (
     <div className="min-h-screen flex items-center flex-col text-light bg-no-repeat bg-bookingBackground bg-cover bg-brightness-[60%] font-mont">
       <div className="flex flex-col screen3:flex-row items-center screen3:justify-center screen3:gap-8 w-full bg-dark px-[4rem] z-10 pb-4 screen3:pb-0">
-        <div className="flex flex-col screen3:flex-row screen3:items-center gap-8 py-4 screen3:py-8">
-          <div className="relative w-[300px] flex items-center  gap-4 text-sm screen5:text-md">
-            <p>Check-In</p>
+        <div className="flex flex-col screen3:flex-row screen3:items-center gap-2 screen3:gap-8 py-4 screen3:py-8">
+          <div className="relative flex flex-col screen3:flex-row items-center justify-between  gap-2 text-sm screen5:text-md">
+            <p>From</p>
             <input
               type="date"
-              className="w-[50%] p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
+              className="p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
               onChange={(event) => setCheckInDate(event.target.value)}
             />
           </div>
-          <div className="w-[300px] flex items-center gap-4 text-sm screen5:text-md">
-            <p>Check-Out</p>
+          <div className="flex flex-col screen3:flex-row items-center gap-2 text-sm screen5:text-md w-[12rem]">
+            <p>To</p>
             <input
               type="date"
-              className="w-[50%] p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
+              className=" p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
               onChange={(event) => setCheckOutDate(event.target.value)}
             />
           </div>
         </div>
         <button
-          className=" px-2 py-1 bg-accLight text-light rounded-lg hover:opacity-[70%] duration-300"
+          className="px-4 py-1 bg-accLight text-light rounded-lg hover:opacity-[70%] duration-300"
           onClick={CheckRoomsAvailability}
         >
           {loading ? (
@@ -69,7 +69,7 @@ const Booking = () => {
           )}
         </button>
       </div>
-      <div className="min-h-screen w-[80%] screen6:w-[60%] bg-white z-0 flex justify-center ">
+      <div className="min-h-screen w-[85%] screen2:w-[65%] screen6:w-[65%] bg-white z-0 flex justify-center items-center">
         {showRooms ? (
           <div className="w-full relative flex flex-col gap-4">
             {availableRooms.map((room) => (

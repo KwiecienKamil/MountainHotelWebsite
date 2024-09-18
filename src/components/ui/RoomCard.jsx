@@ -4,7 +4,7 @@ import RoomRating from "./RoomRating";
 const RoomCard = ({ src, price, title, rating, description }) => {
   return (
     <div className="flex flex-col screen3:flex-row justify-between text-dark shadow-md w-full px-2 py-4">
-      <div className="flex justify-center screen3:justify-normal gap-4 w-full">
+      <div className="flex justify-center screen3:justify-normal gap-8 w-full">
         <img src={src} alt="alt" className="w-[9rem] screen6:w-[11rem]" />
         <div className="flex flex-col gap-2">
           <p className="text-md screen5:text-xl font-semibold">{title}</p>
