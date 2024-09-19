@@ -69,7 +69,7 @@ const Booking = () => {
           )}
         </button>
       </div>
-      <div className="min-h-screen w-[85%] screen2:w-[65%] screen6:w-[65%] bg-white z-0 flex justify-center items-center">
+      <div className="min-h-screen w-[85%] screen2:w-[65%] bg-white flex justify-center items-center">
         {showRooms ? (
           <div className="w-full relative flex flex-col gap-4">
             {availableRooms.map((room) => (
