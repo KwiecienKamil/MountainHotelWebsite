@@ -32,13 +32,13 @@ export const availableRooms = [
     alt: "Executive Suite showcase",
   },
   {
-    title: "Deluxe Room",
+    title: "Cozy Corner",
     image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    price: 50,
+      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=600",
+    price: 60,
     rating: 3,
-    description: "Comfortable and stylish room",
-    alt: "Deluxe room showcase",
+    description: "Combines comfort and charm",
+    alt: "Cozy Corner showcase",
   },
   {
     title: "Deluxe Room",

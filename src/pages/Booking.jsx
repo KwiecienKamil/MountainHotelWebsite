@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineLoading } from "react-icons/ai";
 import { toast } from "react-toastify";
-import {
-  availableRooms,
-  formattedTodaysDate,
-  todaysDate,
-} from "../utils/Helpers";
+import { availableRooms, todaysDate } from "../utils/Helpers";
 import dayjs from "dayjs";
 import RoomCard from "../components/ui/RoomCard";
-import Logo from "../assets/Logo.png";
 
 const Booking = () => {
   const [checkInDate, setCheckInDate] = useState("");
