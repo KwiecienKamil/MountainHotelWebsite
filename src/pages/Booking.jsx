@@ -11,7 +11,7 @@ const Booking = () => {
   const [loading, setLoading] = useState(false);
   const [showRooms, setShowRooms] = useState(false);
 
-  // Checking if user saved date in future
+  // Checking if user chose date in future
   const isNextDateAfterTodaysDate = (todaysDate, checkInDate) => {
     const today = dayjs();
     const nextDate = dayjs(checkInDate);
@@ -25,9 +25,15 @@ const Booking = () => {
     } else {
       setLoading(true);
       setTimeout(() => {
-        isNextDateAfterTodaysDate(todaysDate, checkInDate);
-        setShowRooms(true);
-        setLoading(false);
+        if (isNextDateAfterTodaysDate(todaysDate, checkInDate)) {
+          setShowRooms(true);
+          setLoading(false);
+        } else {
+          toast.error("Please choose dates in future");
+          setLoading(false);
+          setCheckInDate("");
+          setCheckOutDate("");
+        }
       }, "2000");
     }
   };
@@ -42,6 +48,7 @@ const Booking = () => {
               type="date"
               className="p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
               onChange={(event) => setCheckInDate(event.target.value)}
+              value={checkInDate}
             />
           </div>
           <div className="flex flex-col screen3:flex-row items-center gap-2 text-sm screen5:text-md w-[12rem]">
@@ -50,6 +57,7 @@ const Booking = () => {
               type="date"
               className=" p-[.1rem] border-[1px] border-dark rounded-lg px-1 text-dark cursor-pointer"
               onChange={(event) => setCheckOutDate(event.target.value)}
+              value={checkOutDate}
             />
           </div>
         </div>
