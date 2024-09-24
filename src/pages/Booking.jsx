@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { availableRooms, todaysDate } from "../utils/Helpers";
 import dayjs from "dayjs";
 import RoomCard from "../components/ui/RoomCard";
+import { ImExit } from "react-icons/im";
 
 const Booking = () => {
   const [checkInDate, setCheckInDate] = useState("");
@@ -13,7 +14,6 @@ const Booking = () => {
 
   // Checking if user chose date in future
   const isNextDateAfterTodaysDate = (todaysDate, checkInDate) => {
-    const today = dayjs();
     const nextDate = dayjs(checkInDate);
     const comparisonDate = dayjs(todaysDate);
     return nextDate.isAfter(comparisonDate);
@@ -33,6 +33,7 @@ const Booking = () => {
           setLoading(false);
           setCheckInDate("");
           setCheckOutDate("");
+          setShowRooms(false);
         }
       }, "2000");
     }
@@ -61,16 +62,24 @@ const Booking = () => {
             />
           </div>
         </div>
-        <button
-          className="px-4 py-1 bg-accLight text-light rounded-lg hover:opacity-[70%] duration-300"
-          onClick={CheckRoomsAvailability}
-        >
-          {loading ? (
-            <AiOutlineLoading className="animate-spin text-lg screen5:text-xl" />
-          ) : (
-            <p className="text-sm screen5:text-md">Search Rooms</p>
-          )}
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            className={`px-4 py-1 bg-accLight text-light rounded-lg hover:opacity-[70%] duration-300`}
+            onClick={CheckRoomsAvailability}
+          >
+            {loading ? (
+              <AiOutlineLoading className="animate-spin text-lg screen5:text-xl" />
+            ) : (
+              <p className="text-sm screen5:text-md">Search Rooms</p>
+            )}
+          </button>
+          <a
+            href="/"
+            className="px-2 py-1 bg-gray-400 text-light rounded-lg hover:opacity-[70%] duration-300 text-sm"
+          >
+            Cancel
+          </a>
+        </div>
       </div>
       <div className="min-h-screen w-[85%] screen2:w-[65%] bg-white flex justify-center items-center">
         {showRooms ? (
