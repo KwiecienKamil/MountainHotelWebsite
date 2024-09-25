@@ -30,7 +30,9 @@ const NavbarNavigationButtons = ({
               smooth={true}
               offset={50}
               duration={800}
-              className="hover:brightness-75 duration-300 cursor-pointer"
+              className={`duration-300 cursor-pointer
+                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                `}
             >
               Home
             </Link>
@@ -41,7 +43,9 @@ const NavbarNavigationButtons = ({
               smooth={true}
               offset={-150}
               duration={800}
-              className="hover:brightness-75 duration-300 cursor-pointer"
+              className={`duration-300 cursor-pointer
+                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                `}
             >
               Rooms
             </Link>
@@ -52,7 +56,9 @@ const NavbarNavigationButtons = ({
               smooth={true}
               offset={50}
               duration={800}
-              className="hover:brightness-75 duration-300 cursor-pointer"
+              className={`duration-300 cursor-pointer
+                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                `}
             >
               Gastronomy
             </Link>
@@ -63,7 +69,9 @@ const NavbarNavigationButtons = ({
               smooth={true}
               offset={-150}
               duration={800}
-              className="hover:brightness-75 duration-300 cursor-pointer"
+              className={`duration-300 cursor-pointer
+                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                `}
             >
               Gallery
             </Link>
@@ -74,7 +82,9 @@ const NavbarNavigationButtons = ({
               smooth={true}
               offset={-150}
               duration={800}
-              className="hover:brightness-75 duration-300 cursor-pointer"
+              className={`duration-300 cursor-pointer
+                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                `}
             >
               Location
             </Link>

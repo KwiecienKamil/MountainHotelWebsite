@@ -4,7 +4,6 @@ import { toast } from "react-toastify";
 import { availableRooms, todaysDate } from "../utils/Helpers";
 import dayjs from "dayjs";
 import RoomCard from "../components/ui/RoomCard";
-import { ImExit } from "react-icons/im";
 
 const Booking = () => {
   const [checkInDate, setCheckInDate] = useState("");
