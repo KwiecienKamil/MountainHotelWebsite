@@ -18,11 +18,6 @@ const Rooms = () => {
             adventurers, we organize guided local tours, nature hikes, and
             exciting water sports.
           </p>
-          <div className="mb-4 flex justify-center screen6:block">
-            <button className="mt-2 px-3 py-1 screen6:px-4 screen7:py-2 text-light bg-accLight text-xs screen7:text-[15px] hover:brightness-90 duration-300">
-              See more
-            </button>
-          </div>
         </div>
       </div>
       <img src={roomsGallery} alt="Rooms Gallery" />
