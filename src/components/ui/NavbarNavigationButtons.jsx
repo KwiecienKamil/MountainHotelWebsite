@@ -12,15 +12,15 @@ const NavbarNavigationButtons = ({
     <>
       <div
         className={`absolute screen6:static left-0 ${
-          openNavigation ? "top-20" : "-top-[1000px]"
+          openNavigation ? "top-12" : "-top-[1000px]"
         }  w-full transition-all duration-500 
           text-dark flex items-center justify-center screen6:justify-end 
           gap-8 font-semibold text-md `}
       >
         <div className="flex items-center gap-8">
           <div
-            className={`relative flex items-center gap-6 px-8 py-4 lg:p-0 rounded-full screen5:bg-transparent  bg-light shadow-lg screen5:shadow-none ${
-              isScrolled ? `text-dark` : `text-dark screen5:text-light `
+            className={`relative flex items-center gap-6 px-8 py-4 lg:p-0 rounded-full text-lg  screen6:bg-transparent  shadow-lg screen5:shadow-none ${
+              isScrolled ? `text-light screen6:text-dark ` : `text-light`
             }`}
           >
             <Link
