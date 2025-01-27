@@ -9,7 +9,7 @@ const HeroHeading = () => {
       <h1 className="text-[.8rem] screen1:text-[1.5rem] screen4:text-[2rem] screen7:text-[4rem] font-bold">
         Your Mountain<br></br>Escape
       </h1>
-      <p className="text-[.7rem] screen4:text-sm hidden screen2:block">
+      <p className="text-[.7rem] screen4:text-sm screen5:text-lg hidden screen2:block">
         Explore nearby hiking trails, enjoy seasonal outdoor activities, or
         simply unwind<br></br> by the fireplace in our cozy lounge. Our on-site
         restaurant serves delicious,<br></br> locally-sourced cuisine, perfect

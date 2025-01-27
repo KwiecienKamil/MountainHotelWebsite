@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="py-2 bg-dark flex justify-center">
       <a href="https://kamilkwiecien.tech" className="text-light">
-        More of Kamil Kwiecień
+        My Portfolio
       </a>
     </div>
   );
