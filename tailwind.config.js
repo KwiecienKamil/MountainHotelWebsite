@@ -32,7 +32,7 @@ export default {
             transform: "translateX(0)",
           },
           "50%": {
-            transform: "translateX(-60%)",
+            transform: "translateX(-35%)",
           },
           "100%": {
             transform: "translateX(0)",
@@ -40,13 +40,13 @@ export default {
         },
         carouselBackwards: {
           "0%": {
-            transform: "translateX(-60%)",
+            transform: "translateX(-35%)",
           },
           "50%": {
             transform: "translateX(0)",
           },
           "100%": {
-            transform: "translateX(-60%)",
+            transform: "translateX(-35%)",
           },
         },
       },

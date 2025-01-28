@@ -12,7 +12,7 @@ const Rooms = () => {
           Enjoy an unforgettable stay with the best charm
         </h2>
         <div className="w-full px-[1rem] screen3:px-[3rem] screen6:w-[40%]">
-          <p className="text-[10px] screen2:text-xs screen5:text-sm screen7:text-md">
+          <p className="text-[10px] screen2:text-xs screen5:text-sm screen7:text-md pb-4 screen6:pb-0">
             Enjoy our serene spa treatments, stay active in our fully equipped
             fitness center, or take a refreshing dip in the pool. For the
             adventurers, we organize guided local tours, nature hikes, and

@@ -20,7 +20,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="overflow-hidden mt-8">
-        <div className="flex items-center gap-4 animate-carouselBackwards whitespace-nowrap hover:animation translate-x-[-100%]">
+        <div className="flex items-center gap-4 animate-carouselBackwards whitespace-nowrap hover:animation">
           {imagesArray2.map((image) => (
             <img
               src={image.src}

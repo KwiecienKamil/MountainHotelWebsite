@@ -28,7 +28,7 @@ const NavbarNavigationButtons = ({
               to="home"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-250}
               duration={800}
               className={`duration-300 cursor-pointer
                 ${isScrolled ? `hover:text-black` : `hover:brightness-75`}

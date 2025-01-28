@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/Logo.png";
 import NavbarNavigationButtons from "../components/ui/NavbarNavigationButtons";
+import { Link } from "react-scroll";
 
 const Navbar = ({ openNavigation, openResponsiveNav }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -31,7 +32,16 @@ const Navbar = ({ openNavigation, openResponsiveNav }) => {
           : "bg-transparent text-light "
       }`}
     >
-      <img src={Logo} alt="Hotel Logo" className="w-[12rem] screen5:w-auto" />
+      <Link
+        activeClass="active"
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-250}
+        duration={800}
+      >
+        <img src={Logo} alt="Hotel Logo" className="w-[12rem] screen5:w-auto" />
+      </Link>
       <NavbarNavigationButtons
         openResponsiveNav={openResponsiveNav}
         openNavigation={openNavigation}
