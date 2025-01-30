@@ -7,7 +7,7 @@ const Achievements = () => {
     <div className="relative -top-12 screen4:-top-24 screen5:-top-28 bg-light mb-4 w-full px-[2rem] screen4:px-[9rem] text-gray-500 flex items-center justify-between flex-col gap-16 scree6:gap-0 screen6:flex-row ">
       <div>
         <h3 className="text-sm screen1:text-md screen4:text-xl screen8:text-3xl pb-6 border-b-[1px] border-gray-500">
-          Elevating Luxury and Comfort Since 1995
+          Elevating Luxury and Comfort Since 1996
         </h3>
         <div className="flex items-center gap-4 mt-6 text-xs screen1:text-sm screen4:text-md">
           <p>Five Star Hotel</p>
