@@ -1,7 +1,7 @@
 import { FaBars } from "react-icons/fa6";
 
-import { FaCircleArrowUp } from "react-icons/fa6";
 import { Link } from "react-scroll";
+import { MdClose } from "react-icons/md";
 
 const NavbarNavigationButtons = ({
   openNavigation,
@@ -12,17 +12,27 @@ const NavbarNavigationButtons = ({
     <>
       <div
         className={`absolute screen6:static left-0 ${
-          openNavigation ? "top-12" : "-top-[1000px]"
+          openNavigation ? "top-0" : "-top-[1000px]"
         }  w-full transition-all duration-500 
-          text-dark flex items-center justify-center screen6:justify-end 
+           flex items-center justify-center screen6:justify-end 
           gap-8 font-semibold text-md `}
       >
         <div className="flex items-center gap-8">
           <div
-            className={`relative flex items-center gap-6 px-8 py-4 lg:p-0 rounded-full text-lg  screen6:bg-transparent  shadow-lg screen5:shadow-none ${
-              isScrolled ? `text-light screen6:text-dark ` : `text-light`
-            }`}
+            className={`relative flex items-center gap-6 px-8 py-4 lg:p-0 rounded-full text-lg screen6:bg-transparent shadow-lg screen5:shadow-none ${
+              openNavigation
+                ? "flex-col justify-center h-screen bg-dark text rounded-none w-screen"
+                : ""
+            } ${isScrolled ? `text-light screen6:text-dark ` : `text-light`}`}
           >
+            <button
+              onClick={openResponsiveNav}
+              className={`absolute top-6 right-12 text-white text-xl
+               ${`${openNavigation ? "block" : "hidden"}`} 
+              `}
+            >
+              <MdClose />
+            </button>
             <Link
               activeClass="active"
               to="home"
@@ -31,8 +41,13 @@ const NavbarNavigationButtons = ({
               offset={-250}
               duration={800}
               className={`duration-300 cursor-pointer
-                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                ${
+                  isScrolled
+                    ? `hover:text-black`
+                    : `hover:brightness-75 text-white`
+                }
                 `}
+              onClick={openResponsiveNav}
             >
               Home
             </Link>
@@ -44,8 +59,13 @@ const NavbarNavigationButtons = ({
               offset={-150}
               duration={800}
               className={`duration-300 cursor-pointer
-                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                ${
+                  isScrolled
+                    ? `hover:text-black`
+                    : `hover:brightness-75 text-white`
+                }
                 `}
+              onClick={openResponsiveNav}
             >
               Rooms
             </Link>
@@ -57,8 +77,13 @@ const NavbarNavigationButtons = ({
               offset={50}
               duration={800}
               className={`duration-300 cursor-pointer
-                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                ${
+                  isScrolled
+                    ? `hover:text-black`
+                    : `hover:brightness-75 text-white`
+                }
                 `}
+              onClick={openResponsiveNav}
             >
               Gastronomy
             </Link>
@@ -70,8 +95,13 @@ const NavbarNavigationButtons = ({
               offset={-150}
               duration={800}
               className={`duration-300 cursor-pointer
-                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                ${
+                  isScrolled
+                    ? `hover:text-black`
+                    : `hover:brightness-75 text-white`
+                }
                 `}
+              onClick={openResponsiveNav}
             >
               Gallery
             </Link>
@@ -83,17 +113,16 @@ const NavbarNavigationButtons = ({
               offset={-150}
               duration={800}
               className={`duration-300 cursor-pointer
-                ${isScrolled ? `hover:text-black` : `hover:brightness-75`}
+                ${
+                  isScrolled
+                    ? `hover:text-black`
+                    : `hover:brightness-75 text-white`
+                }
                 `}
+              onClick={openResponsiveNav}
             >
               Location
             </Link>
-            <button
-              className="absolute -bottom-3 left-[200px] screen5:hidden text-dark text-2xl rounded-full"
-              onClick={openResponsiveNav}
-            >
-              <FaCircleArrowUp />
-            </button>
           </div>
           <a
             href="/booking"
@@ -106,7 +135,8 @@ const NavbarNavigationButtons = ({
       <button
         className={`md:text-3xl block screen6:hidden  ${
           isScrolled ? `text-accLight` : `text-light`
-        }`}
+        }
+          `}
         onClick={openResponsiveNav}
       >
         <FaBars />
