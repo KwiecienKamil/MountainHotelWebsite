@@ -94,7 +94,7 @@ const Booking = () => {
             ))}
           </div>
         ) : (
-          <h2 className="text-gray-500 text-lg">
+          <h2 className="text-gray-500 text-lg text-center">
             Pick the perfect dates for your stay and click "Search Rooms"
           </h2>
         )}

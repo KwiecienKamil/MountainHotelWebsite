@@ -27,7 +27,7 @@ const NavbarNavigationButtons = ({
           >
             <button
               onClick={openResponsiveNav}
-              className={`absolute top-6 right-12 text-white text-xl
+              className={`absolute top-6 right-8 text-white text-xl
                ${`${openNavigation ? "block" : "hidden"}`} 
               `}
             >
@@ -118,13 +118,13 @@ const NavbarNavigationButtons = ({
             >
               Location
             </Link>
+            <a
+              href="/booking"
+              className="font-semibold px-4 py-2 bg-accLight text-black  rounded-xl hover:opacity-[70%] duration-300"
+            >
+              Book Now
+            </a>
           </div>
-          <a
-            href="/booking"
-            className="font-semibold px-4 py-2 bg-accLight text-black  rounded-xl hover:opacity-[70%] duration-300 hidden screen6:block"
-          >
-            Book Now
-          </a>
         </div>
       </div>
       <button
