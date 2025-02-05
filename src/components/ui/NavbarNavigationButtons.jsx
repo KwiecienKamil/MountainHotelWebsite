@@ -47,7 +47,6 @@ const NavbarNavigationButtons = ({
                     : `hover:brightness-75 text-white`
                 }
                 `}
-              onClick={openResponsiveNav}
             >
               Home
             </Link>
@@ -65,7 +64,6 @@ const NavbarNavigationButtons = ({
                     : `hover:brightness-75 text-white`
                 }
                 `}
-              onClick={openResponsiveNav}
             >
               Rooms
             </Link>
@@ -83,7 +81,6 @@ const NavbarNavigationButtons = ({
                     : `hover:brightness-75 text-white`
                 }
                 `}
-              onClick={openResponsiveNav}
             >
               Gastronomy
             </Link>
@@ -101,7 +98,6 @@ const NavbarNavigationButtons = ({
                     : `hover:brightness-75 text-white`
                 }
                 `}
-              onClick={openResponsiveNav}
             >
               Gallery
             </Link>
@@ -119,7 +115,6 @@ const NavbarNavigationButtons = ({
                     : `hover:brightness-75 text-white`
                 }
                 `}
-              onClick={openResponsiveNav}
             >
               Location
             </Link>
