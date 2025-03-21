@@ -40,7 +40,11 @@ const Navbar = ({ openNavigation, openResponsiveNav }) => {
         offset={-250}
         duration={800}
       >
-        <img src={Logo} alt="Hotel Logo" className="w-[12rem] screen5:w-auto" />
+        <img
+          src={Logo}
+          alt="Hotel Logo"
+          className="w-[12rem] screen5:w-auto cursor-pointer"
+        />
       </Link>
       <NavbarNavigationButtons
         openResponsiveNav={openResponsiveNav}

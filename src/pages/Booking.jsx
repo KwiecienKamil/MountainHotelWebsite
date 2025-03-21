@@ -28,13 +28,13 @@ const Booking = () => {
           setShowRooms(true);
           setLoading(false);
         } else {
-          toast.error("Please choose dates in future");
+          toast.error("Please choose dates in the future");
           setLoading(false);
           setCheckInDate("");
           setCheckOutDate("");
           setShowRooms(false);
         }
-      }, "2000");
+      }, "1000");
     }
   };
 
